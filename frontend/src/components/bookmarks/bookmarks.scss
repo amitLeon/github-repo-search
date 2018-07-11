@@ -1,0 +1,57 @@
+body {
+  background-color: #e9ecef;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+.repo-container {
+  margin: 4em 2em;
+}
+
+.container{
+  margin: 2em 1em;
+}
+
+.bookmarks {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+
+.solo-bookmark {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.solo-bookmark {
+  border: 1px solid white;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  padding: 15px;
+}
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .bookmarks {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .bookmarks {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .bookmarks {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

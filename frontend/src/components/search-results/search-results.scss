@@ -1,0 +1,11 @@
+.bookmark-btn {
+  background: blue;
+  background-color: #007bff;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 5px 15px;
+  &:focus {
+    outline: none;
+  }
+}
